@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8+/n5bakkgTujKje6X66YCR9Osg0BbYVLUa/sy1A5mA=",
+  "Source": "dotnetconsulting.WebApiHangfire",
+  "BasePath": "_content/dotnetconsulting.WebApiHangfire",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dotnetconsulting.ApiVersioning</name>
+    </assembly>
+    <members>
+        <member name="T:dotnetconsulting.ApiVersioning.ConfigureSwaggerOptions">
+            <summary>
+            Configures the Swagger generation options.
+            </summary>
+            <remarks>
+            <para>
+            This allows API versioning to define a Swagger document per API version after the
+            <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider" /> service has been resolved from the service container.
+            </para>
+            <para>Taken from https://github.com/microsoft/aspnet-api-versioning.</para>
+            </remarks>
+        </member>
+        <member name="M:dotnetconsulting.ApiVersioning.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:dotnetconsulting.ApiVersioning.ConfigureSwaggerOptions" /> class.
+            </summary>
+            <param name="provider">
+            The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger
+            documents.
+            </param>
+        </member>
+        <member name="M:dotnetconsulting.ApiVersioning.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:dotnetconsulting.ApiVersioning.ConfigureSwaggerOptions.CreateInfoForApiVersion(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription)">
+            <summary>
+            Internal implementation for building the Swagger basic config.
+            </summary>
+            <param name="description">The description object containing the.</param>
+            <returns>The generated Open API info.</returns>
+        </member>
+        <member name="T:dotnetconsulting.ApiVersioning.Controllers.V1_0.WeatherForecastController">
+            <summary>
+            Version 1
+            </summary>
+        </member>
+        <member name="M:dotnetconsulting.ApiVersioning.Controllers.V1_0.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{dotnetconsulting.ApiVersioning.Controllers.V1_0.WeatherForecastController})">
+            <summary>
+            Ctor V1
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:dotnetconsulting.ApiVersioning.Controllers.V1_0.WeatherForecastController.Get">
+            <summary>
+            Weather forecast V1.0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:dotnetconsulting.ApiVersioning.Controllers.V2_0.WeatherForecastController">
+            <summary>
+            Version 2
+            </summary>
+        </member>
+        <member name="M:dotnetconsulting.ApiVersioning.Controllers.V2_0.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{dotnetconsulting.ApiVersioning.Controllers.V2_0.WeatherForecastController})">
+            <summary>
+            Ctor V2
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:dotnetconsulting.ApiVersioning.Controllers.V2_0.WeatherForecastController.Get">
+            <summary>
+            Weather forecast V2.0
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

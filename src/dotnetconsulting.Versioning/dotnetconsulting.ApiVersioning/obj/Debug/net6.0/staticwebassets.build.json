@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "44qbT04EWbouTbbTdg97oNNKMChWNE6wMwAOqbfPGYI=",
+  "Source": "dotnetconsulting.ApiVersioning",
+  "BasePath": "_content/dotnetconsulting.ApiVersioning",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

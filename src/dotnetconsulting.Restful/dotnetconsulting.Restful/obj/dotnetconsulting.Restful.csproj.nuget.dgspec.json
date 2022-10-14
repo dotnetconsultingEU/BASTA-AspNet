@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Workshops\\asp.net-core\\6.0\\dotnetconsulting.Restful\\dotnetconsulting.Restful\\dotnetconsulting.Restful.csproj": {}
+  },
+  "projects": {
+    "C:\\Workshops\\asp.net-core\\6.0\\dotnetconsulting.Restful\\dotnetconsulting.Restful\\dotnetconsulting.Restful.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workshops\\asp.net-core\\6.0\\dotnetconsulting.Restful\\dotnetconsulting.Restful\\dotnetconsulting.Restful.csproj",
+        "projectName": "dotnetconsulting.Restful",
+        "projectPath": "C:\\Workshops\\asp.net-core\\6.0\\dotnetconsulting.Restful\\dotnetconsulting.Restful\\dotnetconsulting.Restful.csproj",
+        "packagesPath": "C:\\Users\\tkans\\.nuget\\packages\\",
+        "outputPath": "C:\\Workshops\\asp.net-core\\6.0\\dotnetconsulting.Restful\\dotnetconsulting.Restful\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tkans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/LJiIbgAot2CNmpG7ewd8Eg9szsQI3hIa68yOODqeKdmGRIeHTN/api": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
