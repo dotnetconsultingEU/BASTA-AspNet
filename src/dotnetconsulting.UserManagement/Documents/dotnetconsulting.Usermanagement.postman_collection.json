@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "1efae54f-9151-4807-abde-97dc62a79f41",
+		"name": "dotnetconsulting.Usermanagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/info/files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/info/files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"info",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/info/routes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/info/routes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"info",
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/UserManagementPort/AllPermissions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/UserManagement/AllPermissions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"UserManagement",
+						"AllPermissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/UserManagement/User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/UserManagement/User?unumber=U000004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"UserManagement",
+						"User"
+					],
+					"query": [
+						{
+							"key": "unumber",
+							"value": "U000004"
+						},
+						{
+							"key": "unumber",
+							"value": "U000012",
+							"disabled": true
+						},
+						{
+							"key": "unumber",
+							"value": "U000264",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/AcosToACMaps/AllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/UserManagement/AllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"UserManagement",
+						"AllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/UserManagement/DeactivateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/UserManagement/DeactivateUser?uNumber=U000264",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"UserManagement",
+						"DeactivateUser"
+					],
+					"query": [
+						{
+							"key": "uNumber",
+							"value": "U000264"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/UserManagement/User (Create)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"userAccount\": {\r\n  \"uNumber\": \"u999999\",\r\n  \"firstname\": \"Thorsten\",\r\n  \"lastname\": \"Kansy\",\r\n  \"email\": \"Thorsten.Kansy@dotnetconsulting.eu\",\r\n  \"culture\": \"de-DE\"\r\n   },\r\n    \"requestedPlants\": [\r\n      { \"code\": \"dnc1\" }\r\n  ],\r\n  \"requestedPermissions\": [\r\n    {\"permission\": \"ROLE: 1\" },\r\n    {\"permission\": \"ROLE: 2\" },\r\n    {\"permission\": \"ROLE: 3\" },\r\n    {\"permission\": \"ROLE: 4\" }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/UserManagement/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"UserManagement",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/UserManagement/User  (Update)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"userAccount\": {\r\n  \"uNumber\": \"u999999\"\r\n   },\r\n  \"requestedPermissions\": [\r\n    {\"permission\": \"ROLE: 1\" },\r\n    {\"permission\": \"ROLE: 2\" },\r\n    {\"permission\": \"ROLE: 99\" }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/UserManagement/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"UserManagement",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/UserManagement/Permissions",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uNumber\": \"u999999\",\r\n    \"permissionsToAdd\" : [\r\n        {\"permission\": \"ROLE: 16\" },\r\n        {\"permission\": \"ROLE: 17\" }\r\n     ],\r\n    \"permissionsToDrop\" : [\r\n        {\"permission\": \"ROLE: 1\" }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/UserManagement/Permissions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"UserManagement",
+						"Permissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:{{UserManagementPort}}/api/UserManagement/AllPlants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{UserManagementPort}}/api/UserManagement/AllPlants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{UserManagementPort}}",
+					"path": [
+						"api",
+						"UserManagement",
+						"AllPlants"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "3qfOpxieG7",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

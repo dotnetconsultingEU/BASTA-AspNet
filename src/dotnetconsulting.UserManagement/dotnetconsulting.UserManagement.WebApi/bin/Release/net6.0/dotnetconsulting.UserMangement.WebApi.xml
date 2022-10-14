@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dotnetconsulting.UserMangement.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:dotnetconsulting.UserMangement.WebApi.Code.ApiKeyFilter">
+            <summary>
+            Filter to check api key.
+            </summary>
+        </member>
+        <member name="F:dotnetconsulting.UserMangement.WebApi.Code.ApiKeyFilter.APIKEYNAME">
+            <summary>
+            Name of header.
+            </summary>
+        </member>
+        <member name="F:dotnetconsulting.UserMangement.WebApi.Code.ApiKeyFilter._apiKey">
+            <summary>
+            The key od <c>null</c>.
+            </summary>
+        </member>
+        <member name="T:dotnetconsulting.UserMangement.WebApi.Code.ApiKeySettings">
+            <summary>
+            Settings for Api Key.
+            </summary>
+        </member>
+        <member name="P:dotnetconsulting.UserMangement.WebApi.Code.ApiKeySettings.Key">
+            <summary>
+            The Api key or <c>null</c>. 
+            </summary>
+        </member>
+        <member name="P:dotnetconsulting.UserMangement.WebApi.Code.ApiKeySettings.ProtectWithApiKey">
+            <summary>
+            Check if api key protection is avaiable.
+            </summary>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.InfoController.GetAssemblies">
+            <summary>
+            Returns a list of all files (currently assemblies).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.InfoController.GetRoutes">
+            <summary>
+            Returns a list of all routes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.UserManagementController.AddOrUpdateUser(dotnetconsulting.UserManagement.Infrastructure.DTOs.FullUserDto,System.Threading.CancellationToken)">
+            <summary>
+            (1) Add/ Update user.
+            </summary>
+            <param name="User">The user to be created.</param>
+            <param name="cancellationToken">Async cancellation token.</param>
+            <returns></returns>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.UserManagementController.FetchAvailablePermissions(System.Threading.CancellationToken)">
+            <summary>
+            (2) Fetch all available permissions existing in the system.
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.UserManagementController.FetchAllUsers(System.Threading.CancellationToken)">
+            <summary>
+            (3) Fetch all users with permissions.
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.UserManagementController.FetchSingleUser(System.String,System.Threading.CancellationToken)">
+            <summary>
+            (4) Fetch one user.
+            </summary>
+            <param name="UNumber">User Id.</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.UserManagementController.DeactivateUser(System.String,System.Threading.CancellationToken)">
+            <summary>
+            (5) Deactivate a user.
+            </summary>
+            <param name="UNumber">User Id.</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.UserManagementController.SyncPermissions(dotnetconsulting.UserManagement.Infrastructure.DTOs.SyncPermissionsDto,System.Threading.CancellationToken)">
+            <summary>
+            (6) Sync the permissions for an existing user.
+            </summary>
+            <param name="SyncPermissions">The permissions to be added/ removed for the given user.</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dotnetconsulting.UserMangement.WebApi.Controllers.UserManagementController.FetchAvailablePlants(System.Threading.CancellationToken)">
+            <summary>
+            (7) Fetch all available plants existing in the system.
+            </summary>
+            <param name="cancellationToken">Async cancellation token.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

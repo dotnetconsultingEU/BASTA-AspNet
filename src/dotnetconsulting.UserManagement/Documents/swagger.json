@@ -1,0 +1,747 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "dotnetconsulting.UserMangement.WebApi",
+    "description": "dotnetconsulting.UserMangement.WebApi<br>API key <b>3qfOpxieG7</b>",
+    "termsOfService": "https://example.com/terms",
+    "contact": {
+      "name": "Thorsten Kansy",
+      "url": "https://dotnetconsulting.eu",
+      "email": "tkansy@dotnetconsulting.eu"
+    },
+    "license": {
+      "name": "Property of dotnetconsulting.eu",
+      "url": "https://www.dotnetconsulting.de/"
+    },
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Info/Files": {
+      "get": {
+        "tags": [
+          "Info"
+        ],
+        "summary": "Returns a list of all files (currently assemblies).",
+        "operationId": "GetAssemblies",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Info/Routes": {
+      "get": {
+        "tags": [
+          "Info"
+        ],
+        "summary": "Returns a list of all routes.",
+        "operationId": "GetRoutes",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UserManagement/User": {
+      "put": {
+        "tags": [
+          "UserManagement"
+        ],
+        "summary": "(1) Add/ Update user.",
+        "operationId": "AddOrUpdateUser",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The user to be created.",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FullUserDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FullUserDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FullUserDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FullUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User was refreshed."
+          },
+          "201": {
+            "description": "User was created."
+          },
+          "400": {
+            "description": "Specific error. See details.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "UserManagement"
+        ],
+        "summary": "(4) Fetch one user.",
+        "operationId": "FetchSingleUser",
+        "parameters": [
+          {
+            "name": "UNumber",
+            "in": "query",
+            "description": "User Id.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "UNumber is invalid"
+          },
+          "400": {
+            "description": "Specific error. See details.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UserManagement/AllPermissions": {
+      "get": {
+        "tags": [
+          "UserManagement"
+        ],
+        "summary": "(2) Fetch all available permissions existing in the system.",
+        "operationId": "FetchAvailablePermissions",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PermissionDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PermissionDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PermissionDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Specific error. See details.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UserManagement/AllUsers": {
+      "get": {
+        "tags": [
+          "UserManagement"
+        ],
+        "summary": "(3) Fetch all users with permissions.",
+        "operationId": "FetchAllUsers",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Specific error. See details.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UserManagement/DeactivateUser": {
+      "post": {
+        "tags": [
+          "UserManagement"
+        ],
+        "summary": "(5) Deactivate a user.",
+        "operationId": "DeactivateUser",
+        "parameters": [
+          {
+            "name": "UNumber",
+            "in": "query",
+            "description": "User Id.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "UNumber is invalid"
+          },
+          "400": {
+            "description": "Specific error. See details.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UserManagement/Permissions": {
+      "put": {
+        "tags": [
+          "UserManagement"
+        ],
+        "summary": "(6) Sync the permissions for an existing user.",
+        "operationId": "SyncPermissions",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The permissions to be added/ removed for the given user.",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SyncPermissionsDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SyncPermissionsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SyncPermissionsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SyncPermissionsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "404": {
+            "description": "UNumber is invalid"
+          },
+          "400": {
+            "description": "Specific error. See details.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UserManagement/AllPlants": {
+      "get": {
+        "tags": [
+          "UserManagement"
+        ],
+        "summary": "(7) Fetch all available plants existing in the system.",
+        "operationId": "FetchAvailablePlants",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "3qfOpxieG7"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlantDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlantDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlantDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Specific error. See details.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserErrorDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "FullUserDto": {
+        "type": "object",
+        "properties": {
+          "userAccount": {
+            "$ref": "#/components/schemas/UserDto"
+          },
+          "requestedPlants": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlantDto"
+            },
+            "nullable": true
+          },
+          "requestedPermissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermissionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PermissionDto": {
+        "type": "object",
+        "properties": {
+          "permission": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlantDto": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SyncPermissionsDto": {
+        "type": "object",
+        "properties": {
+          "uNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "permissionsToAdd": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermissionDto"
+            },
+            "nullable": true
+          },
+          "permissionsToDrop": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermissionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserDto": {
+        "type": "object",
+        "properties": {
+          "uNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstname": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastname": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "culture": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "plants": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlantDto"
+            },
+            "nullable": true
+          },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermissionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserErrorDetails": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "details": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

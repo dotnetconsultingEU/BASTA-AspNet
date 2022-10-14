@@ -1,0 +1,63 @@
+﻿{
+  AllUsers: {
+    nodes: [
+      {
+        culture: de-DE,
+        email: u000004@dotnetconsulting.eu,
+        firstName: Firstname: 4,
+        lastName: Lastname: 4,
+        name: u000004,
+        permissions: [
+          {
+            name: ROLE: 9
+          }
+        ],
+        plants: [
+          {
+            code: DNC1
+          }
+        ],
+        uNumber: u000004
+      },
+      {
+        culture: en-US,
+        email: u000012@dotnetconsulting.eu,
+        firstName: Firstname: 12,
+        lastName: Lastname: 12,
+        name: u000012,
+        permissions: [
+          {
+            name: ROLE: 3
+          },
+          {
+            name: ROLE: 1
+          }
+        ],
+        plants: [
+          {
+            code: DNC1
+          }
+        ],
+        uNumber: u000012
+      },
+      {
+        culture: de-DE,
+        email: u000015@dotnetconsulting.eu,
+        firstName: Firstname: 15,
+        lastName: Lastname: 15,
+        name: u000015,
+        permissions: [
+          {
+            name: ROLE: 3
+          }
+        ],
+        plants: [
+          {
+            code: DNC1
+          }
+        ],
+        uNumber: u000015
+      }
+    ]
+  }
+}

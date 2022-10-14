@@ -1,0 +1,23 @@
+﻿{
+  singleUser: {
+    culture: en-US,
+    email: u000012@dotnetconsulting.eu,
+    firstname: Firstname: 12,
+    lastname: Lastname: 12,
+    permissions: [
+      {
+        permission: ROLE: 3
+      },
+      {
+        permission: ROLE: 1
+      }
+    ],
+    plants: [
+      {
+        code: DNC1
+      }
+    ],
+    uNumber: u000012,
+    username: u000012
+  }
+}

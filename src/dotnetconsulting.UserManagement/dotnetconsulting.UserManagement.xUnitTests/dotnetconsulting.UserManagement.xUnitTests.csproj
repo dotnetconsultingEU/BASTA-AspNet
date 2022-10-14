@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="LogicQueries\DeactivateUser.ql" />
+	  <None Remove="LogicQueries\DirectPermission.ql" />
+	  <None Remove="LogicQueries\DirectUserAndPermissions.ql" />
+	  <None Remove="LogicQueries\DirectUserFilter.ql" />
+	  <None Remove="LogicQueries\DirectUserOrder.ql" />
+	  <None Remove="LogicQueries\DirectUserPaging.ql" />
+	  <None Remove="LogicQueries\DirectUserPaging2.ql" />
+	  <None Remove="LogicQueries\FetchAllUsers.ql" />
+	  <None Remove="LogicQueries\FetchAvailablePermissions.ql" />
+	  <None Remove="LogicQueries\FetchAvailablePlants.ql" />
+	  <None Remove="LogicQueries\FetchSingleUser.ql" />
+	  <None Remove="LogicQueries\MultipleQueries.ql" />
+	  <None Remove="LogicQueries\SyncPermissions.ql" />
+	  <None Remove="LogicQueries\UserCreate.ql" />
+	  <None Remove="LogicQueries\UserUpdate.ql" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="LogicQueries\DeactivateUser.ql" />
+	  <EmbeddedResource Include="LogicQueries\DirectPermission.ql" />
+	  <EmbeddedResource Include="LogicQueries\DirectUserAndPermissions.ql" />
+	  <EmbeddedResource Include="LogicQueries\DirectUserFilter.ql" />
+	  <EmbeddedResource Include="LogicQueries\DirectUserOrder.ql" />
+	  <EmbeddedResource Include="LogicQueries\DirectUserPaging.ql" />
+	  <EmbeddedResource Include="LogicQueries\DirectUserPaging2.ql" />
+	  <EmbeddedResource Include="LogicQueries\FetchAllUsers.ql" />
+	  <EmbeddedResource Include="LogicQueries\FetchAvailablePermissions.ql" />
+	  <EmbeddedResource Include="LogicQueries\FetchAvailablePlants.ql" />
+	  <EmbeddedResource Include="LogicQueries\FetchSingleUser.ql" />
+	  <EmbeddedResource Include="LogicQueries\MultipleQueries.ql" />
+	  <EmbeddedResource Include="LogicQueries\SyncPermissions.ql" />
+	  <EmbeddedResource Include="LogicQueries\UserCreate.ql" />
+	  <EmbeddedResource Include="LogicQueries\UserUpdate.ql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Bogus" Version="34.0.2" />
+		<PackageReference Include="GraphQL.Client" Version="5.1.0" />
+		<PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="5.1.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.1" />
+		<PackageReference Include="coverlet.collector" Version="3.1.2">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="xunit" Version="2.4.2" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" />
+		<PackageReference Include="Verify.Xunit" Version="17.10.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="DemoTest1.Test1.verified.txt">
+	    <DependentUpon>DemoTest1.cs</DependentUpon>
+	  </None>
+	</ItemGroup>
+
+</Project>

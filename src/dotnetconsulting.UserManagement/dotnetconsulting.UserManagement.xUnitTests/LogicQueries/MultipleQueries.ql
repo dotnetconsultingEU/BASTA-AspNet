@@ -1,0 +1,25 @@
+﻿query{
+    plants:allPlants
+  {
+    code
+  }
+  permissions:allPermissions
+  {
+    permission
+  }
+  users:allUsers
+  {
+    uNumber  
+    username
+    firstname
+    lastname
+    email
+    culture
+    permissions{
+      permission
+    }
+    plants{
+      code
+    }    
+  }
+}

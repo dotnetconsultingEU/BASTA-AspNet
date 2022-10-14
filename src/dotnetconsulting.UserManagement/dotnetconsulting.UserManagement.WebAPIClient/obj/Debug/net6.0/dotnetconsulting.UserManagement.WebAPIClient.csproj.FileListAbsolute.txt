@@ -1,0 +1,17 @@
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\bin\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.exe
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\bin\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.deps.json
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\bin\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.runtimeconfig.json
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\bin\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.dll
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\bin\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.pdb
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.csproj.AssemblyReference.cache
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.AssemblyInfoInputs.cache
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.AssemblyInfo.cs
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.csproj.CoreCompileInputs.cache
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.csproj.CopyComplete
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.dll
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\refint\dotnetconsulting.UserManagement.WebAPIClient.dll
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.pdb
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\dotnetconsulting.UserManagement.WebAPIClient.genruntimeconfig.cache
+C:\Workshops\asp.net-core\6.0\dotnetconsulting.UserManagement\dotnetconsulting.UserManagement.WebAPIClient\obj\Debug\net6.0\ref\dotnetconsulting.UserManagement.WebAPIClient.dll

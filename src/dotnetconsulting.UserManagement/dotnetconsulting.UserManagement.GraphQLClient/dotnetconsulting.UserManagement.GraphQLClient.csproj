@@ -1,0 +1,77 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="LogicQueries\DeactivateUser.ql" />
+		<None Remove="LogicQueries\DirectPermission.ql" />
+		<None Remove="LogicQueries\DirectUserAndPermissions.ql" />
+		<None Remove="LogicQueries\DirectUserFilter.ql" />
+		<None Remove="LogicQueries\DirectUserOrder.ql" />
+		<None Remove="LogicQueries\DirectUserPaging.ql" />
+		<None Remove="LogicQueries\DirectUserPaging2.ql" />
+		<None Remove="LogicQueries\FetchAllUsers.ql" />
+		<None Remove="LogicQueries\FetchAvailablePermissions.ql" />
+		<None Remove="LogicQueries\FetchAvailablePlants.ql" />
+		<None Remove="LogicQueries\FetchSingleUser.ql" />
+		<None Remove="LogicQueries\MultipleQueries.ql" />
+		<None Remove="LogicQueries\SyncPermissions.ql" />
+		<None Remove="LogicQueries\UserCreate.ql" />
+		<None Remove="LogicQueries\UserUpdate.ql" />
+		<None Remove="Mutations\Mutation1.ql" />
+		<None Remove="Mutations\Mutation2.ql" />
+		<None Remove="Mutations\Mutation3.ql" />
+		<None Remove="Queries\Query1.ql" />
+		<None Remove="Queries\Query2.ql" />
+		<None Remove="Queries\Query3.ql" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="LogicQueries\DirectUserPaging2.ql" />
+	  <EmbeddedResource Include="LogicQueries\DirectUserPaging.ql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="LogicQueries\SyncPermissions.ql" />
+		<EmbeddedResource Include="LogicQueries\UserUpdate.ql" />
+		<EmbeddedResource Include="LogicQueries\UserCreate.ql" />
+		<EmbeddedResource Include="LogicQueries\DirectUserOrder.ql" />
+		<EmbeddedResource Include="LogicQueries\MultipleQueries.ql" />
+		<EmbeddedResource Include="LogicQueries\DirectUserAndPermissions.ql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="LogicQueries\DirectPermission.ql" />
+		<EmbeddedResource Include="LogicQueries\DirectUserFilter.ql" />
+		<EmbeddedResource Include="LogicQueries\FetchSingleUser.ql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="LogicQueries\DeactivateUser.ql" />
+		<EmbeddedResource Include="LogicQueries\FetchAllUsers.ql" />
+		<EmbeddedResource Include="LogicQueries\FetchAvailablePermissions.ql" />
+		<EmbeddedResource Include="LogicQueries\FetchAvailablePlants.ql" />
+		<EmbeddedResource Include="Mutations\Mutation3.ql" />
+		<EmbeddedResource Include="Mutations\Mutation2.ql" />
+		<EmbeddedResource Include="Mutations\Mutation1.ql" />
+		<EmbeddedResource Include="Queries\Query1.ql" />
+		<EmbeddedResource Include="Queries\Query2.ql" />
+		<EmbeddedResource Include="Queries\Query3.ql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Subscriptions\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="GraphQL.Client" Version="5.1.0" />
+		<PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="5.1.0" />
+	</ItemGroup>
+
+</Project>

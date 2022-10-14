@@ -1,0 +1,6 @@
+﻿query{
+  plants:allPlants
+  {
+    code
+  }
+}

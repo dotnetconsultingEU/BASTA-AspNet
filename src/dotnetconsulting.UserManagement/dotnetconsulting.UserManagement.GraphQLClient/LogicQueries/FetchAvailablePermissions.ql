@@ -1,0 +1,6 @@
+﻿query{
+  permissions:allPermissions
+  {
+    permission
+  }
+}

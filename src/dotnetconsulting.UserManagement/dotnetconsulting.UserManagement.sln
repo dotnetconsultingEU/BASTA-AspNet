@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetconsulting.UserManagement.GraphQL", "dotnetconsulting.UserManagement.GraphQL\dotnetconsulting.UserManagement.GraphQL.csproj", "{17DBC2DF-A3F4-4884-A3B0-E4D6C5484ECD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetconsulting.UserManagement.Infrastructure", "dotnetconsulting.UserManagement.Infrastructure\dotnetconsulting.UserManagement.Infrastructure.csproj", "{B0C8AFDD-8393-40AF-90F1-A4D73BC8299C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetconsulting.UserManagement.Logic", "dotnetconsulting.UserManagement.Logic\dotnetconsulting.UserManagement.Logic.csproj", "{D30DB594-8C34-4571-B640-B4F8658216CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetconsulting.UserManagement.WebAPI", "dotnetconsulting.UserManagement.WebApi\dotnetconsulting.UserManagement.WebAPI.csproj", "{98FD106B-6FC9-4AEF-B51D-45714E368521}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{C336BF38-FFAB-4EEE-BD2B-B74B3358707F}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\CreateDatabase.sql = Documents\CreateDatabase.sql
+		Documents\dotnetconsulting.Usermanagement.postman_collection.json = Documents\dotnetconsulting.Usermanagement.postman_collection.json
+		Documents\swagger.json = Documents\swagger.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetconsulting.UserManagement.WebAPIClient", "dotnetconsulting.UserManagement.WebAPIClient\dotnetconsulting.UserManagement.WebAPIClient.csproj", "{9AFACB2F-6C58-4483-96D4-E3190CEA2F97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetconsulting.UserManagement.GraphQLClient", "dotnetconsulting.UserManagement.GraphQLClient\dotnetconsulting.UserManagement.GraphQLClient.csproj", "{876E28D2-40DF-43F0-8385-17EAEA07A78A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadTest", "LoadTest", "{F73749D6-FBD9-4544-AAD7-C805D938E17B}"
+	ProjectSection(SolutionItems) = preProject
+		dotnetconsulting.UserManagement.LoadTest\allPermissions.js = dotnetconsulting.UserManagement.LoadTest\allPermissions.js
+		dotnetconsulting.UserManagement.LoadTest\allPlants.js = dotnetconsulting.UserManagement.LoadTest\allPlants.js
+		dotnetconsulting.UserManagement.LoadTest\allUsers.js = dotnetconsulting.UserManagement.LoadTest\allUsers.js
+		dotnetconsulting.UserManagement.LoadTest\readme.txt = dotnetconsulting.UserManagement.LoadTest\readme.txt
+		dotnetconsulting.UserManagement.LoadTest\singleUser.js = dotnetconsulting.UserManagement.LoadTest\singleUser.js
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetconsulting.UserManagement.xUnitTests", "dotnetconsulting.UserManagement.xUnitTests\dotnetconsulting.UserManagement.xUnitTests.csproj", "{7B4F9450-102F-4551-8518-698065716EB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17DBC2DF-A3F4-4884-A3B0-E4D6C5484ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17DBC2DF-A3F4-4884-A3B0-E4D6C5484ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17DBC2DF-A3F4-4884-A3B0-E4D6C5484ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17DBC2DF-A3F4-4884-A3B0-E4D6C5484ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C8AFDD-8393-40AF-90F1-A4D73BC8299C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C8AFDD-8393-40AF-90F1-A4D73BC8299C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C8AFDD-8393-40AF-90F1-A4D73BC8299C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C8AFDD-8393-40AF-90F1-A4D73BC8299C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D30DB594-8C34-4571-B640-B4F8658216CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30DB594-8C34-4571-B640-B4F8658216CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30DB594-8C34-4571-B640-B4F8658216CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30DB594-8C34-4571-B640-B4F8658216CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FD106B-6FC9-4AEF-B51D-45714E368521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FD106B-6FC9-4AEF-B51D-45714E368521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FD106B-6FC9-4AEF-B51D-45714E368521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FD106B-6FC9-4AEF-B51D-45714E368521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFACB2F-6C58-4483-96D4-E3190CEA2F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFACB2F-6C58-4483-96D4-E3190CEA2F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFACB2F-6C58-4483-96D4-E3190CEA2F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFACB2F-6C58-4483-96D4-E3190CEA2F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876E28D2-40DF-43F0-8385-17EAEA07A78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876E28D2-40DF-43F0-8385-17EAEA07A78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876E28D2-40DF-43F0-8385-17EAEA07A78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876E28D2-40DF-43F0-8385-17EAEA07A78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4F9450-102F-4551-8518-698065716EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4F9450-102F-4551-8518-698065716EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4F9450-102F-4551-8518-698065716EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4F9450-102F-4551-8518-698065716EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0E692AC-7B8C-40C4-8DB3-034A24CE123F}
+	EndGlobalSection
+EndGlobal
